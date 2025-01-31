@@ -7,11 +7,11 @@ Lab 2 for Spring 25 Data Structures
 Referring to the algorithm you implemented in the function **monotonic** in the
 file **edit_me.py** and assuming that the input list has length **N**,
 
-* the big-O worst-case complexity is PUT YOUR ANSWER HERE, and
-* the big-O best-case complexity is PUT YOUR ANSWER HERE.
+* the big-O worst-case complexity is O(N), where N is the length of the input list, and
+* the big-O best-case complexity is O(N), where N is the length of the input list.
 
 Referring to the code block below,
-* the big-O worst-case complexity of the function **search** is PUT YOUR ANSWER HERE.
+* the big-O worst-case complexity of the function **search** is O(log N).
   ```python
   def search(lst, key):
 
@@ -44,6 +44,5 @@ Notes:
 
 #### Critique
 
-I would use the function **search** (defined above) in real life because COMPLETE OR DELETE THIS SENTENCE.
-
-I would not use the function **search** in real life because OR COMPLETE OR DELETE THIS SENTENCE.
+I would use the function **search** (defined above) in real life because Binary search effectively locates an element within a sorted list, resulting in a significant reduction in search time from linear (O(N)) to logarithmic (O(log N)), particularly for big datasets.
+I would not use the function **search** in real life because The list must already be sorted in order for it to work. The search will not function if the list is not sorted; sorting must be done first, which may take more time (O(N log N) for sorting). Furthermore, if the list needs to be searched repeatedly with unsorted data or changes often, binary search might not be appropriate.
